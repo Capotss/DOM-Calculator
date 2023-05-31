@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css">
+    <script defer src="calc.js"></script>
+    <title>Calc</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="first-row">
+            <input value="0" type="text" id="result" placeholder="Result" readonly >
+            <input type="button" value="C" onclick="clearScreen()">
+        </div>
+        <div class="second-row">
+            <input type="button" value="1" onclick="screenUpdate(1)">
+            <input type="button" value="2" onclick="screenUpdate(2)">
+            <input type="button" value="3" onclick="screenUpdate(3)">
+            <input class="ops" type="button" value="+" onclick="screenUpdate('+')">
+        </div>
+        <div class="third-row">
+            <input type="button" value="4" onclick="screenUpdate(4)">
+            <input type="button" value="5" onclick="screenUpdate(5)">
+            <input type="button" value="6" onclick="screenUpdate(6)">
+            <input class="ops" type="button" value="-" onclick="screenUpdate('-')">
+        </div>
+        <div class="fourth-row">
+            <input type="button" value="7" onclick="screenUpdate(7)">
+            <input type="button" value="8" onclick="screenUpdate(8)">
+            <input type="button" value="9" onclick="screenUpdate(9)">
+            <input class="ops" type="button" value="&times;" onclick="screenUpdate('*')">
+        </div>
+        <div class="fifith-row">
+            <input class="ops" type="button" value="&divide;" onclick="screenUpdate('/')">
+            <input type="button" value="0" onclick="screenUpdate(0)">
+            <input type="button" value="." onclick="screenUpdate('.')">
+            <input  type="button" value="=" onclick="calculate()">
+        </div>
+    </div>
+</body>
+
+</html>

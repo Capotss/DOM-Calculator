@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
+    --red0: #0f0606;
+    --red1: #200b0b;
+    --red2: #2f0000;
+    --red3: #490000;
+}
+
+body {
+    background-color: var(--red0);
+    color: white;
+}
+
+.ops {
+    background-color: var(--red2);
+}
+
+input[value='C'],
+input[value='='] {
+    background-color: var(--red3);
+}
+
+input {
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    width: 70px;
+    background-color: var(--red1);
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    margin: 0.2em;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+input[type="button"]:hover {
+    background-color: rgba(211, 0, 0, 0.600);
+    color: #fff;
+}
+
+input[type="text"] {
+    background-color: var(--red1);
+    width: 230px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+    margin-bottom: 4px;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
